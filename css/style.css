@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+:root {
+  --primaryColor: #F87171;
+  --secondaryColor: #FEE2E2;
+  --mainWhite: #fff;
+  --mainBlack: #222;
+  --mainGrey: #7c7c7c;
+  --mainSpacing: 0.1rem;
+  --mainTransition: all 0.3s linear;
+  --mainRed: #EF4444;
+  --bodyColor: #f6f6f6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: auto;
+  color: var(--mainBlack);
+  font-family: "Lato", sans-serif;
+  background-color: var(--bodyColor);
+  position: relative;
+}
+
+/* Nav bar */
+
+.navbar {
+  background-color: var(--secondaryColor);
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-center {
+  max-width: 1170px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.menu-icon {
+  color: var(--primaryColor);
+  cursor: pointer;
+}
+
+.nav-title {
+  color: var(--mainBlack);
+}
+
+.cart-btn {
+  color: var(--primaryColor);
+  position: relative;
+  cursor: pointer;
+}
+
+.cart-btn i,
+.menu-icon i {
+  font-size: 1.5rem;
+}
+
+.cart-items {
+  position: absolute;
+  background-color: var(--mainRed);
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--mainWhite);
+  font-size: 0.765rem;
+  top: -8px;
+  right: -8px;
+}
+
+/* end of navbar */
+
+.section-title {
+  margin: 2rem 0;
+
+  /* background-color: tomato; */
+}
+
+.products {
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.products-center {
+  width: 100%;
+  max-width: 1170px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-column-gap: 3rem;
+  grid-row-gap: 3.5rem;
+}
+.product {
+  background-color: var(--mainWhite);
+  padding-bottom: 1rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.product-img {
+  min-height: 100px;
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+.product-desc {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+.add-to-cart {
+  outline: none;
+  border: none;
+  background-color: var(--secondaryColor);
+  color: var(--primaryColor);
+  font-weight: 700;
+  border-radius: 6px;
+  padding: 10px 25px;
+  cursor: pointer;
+  margin-top: 1.5rem;
+}
